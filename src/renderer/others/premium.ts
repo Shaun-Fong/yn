@@ -107,7 +107,15 @@ async function upgradeV1License (oldLicense: string) {
 }
 
 export function getPurchased (force = false) {
+<<<<<<< Updated upstream
   logger.debug('getPurchased', force)
+=======
+  return true
+  if (!force && typeof purchased === 'boolean') {
+    return purchased
+  }
+
+>>>>>>> Stashed changes
   if (FLAG_DEMO || MODE === 'share-preview') {
     return true
   }

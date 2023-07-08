@@ -45,16 +45,9 @@
     "hardenedRuntime": true,
     "entitlements": "build/entitlements.mac.plist",
     "entitlementsInherit": "build/entitlements.mac.plist",
-    "binaries": [
-      "out/mac/Yank Note.app/Contents/Resources/app.asar.unpacked/bin/darwin-pandoc-2.14.2"
-    ],
     "target": [
       "dmg",
       "zip"
     ]
-  },
-  "afterSign": "scripts/notarize.js",
-  "nsis": {
-    "perMachine": false
   }
 }
