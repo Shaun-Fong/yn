@@ -107,25 +107,21 @@ async function upgradeV1License (oldLicense: string) {
 }
 
 export function getPurchased (force = false) {
-<<<<<<< Updated upstream
-  logger.debug('getPurchased', force)
-=======
   return true
-  if (!force && typeof purchased === 'boolean') {
-    return purchased
-  }
+  // if (!force && typeof purchased === 'boolean') {
+  //   return purchased
+  // }
 
->>>>>>> Stashed changes
-  if (FLAG_DEMO || MODE === 'share-preview') {
-    return true
-  }
+  // if (FLAG_DEMO || MODE === 'share-preview') {
+  //   return true
+  // }
 
-  let token = licenseToken
-  if (typeof token === 'undefined' || force) {
-    token = getLicenseToken()
-  }
+  // let token = licenseToken
+  // if (typeof token === 'undefined' || force) {
+  //   token = getLicenseToken()
+  // }
 
-  return !!(token?.isAvailable)
+  // return !!(token?.isAvailable)
 }
 
 export function showPremium (tab?: PremiumTab) {
